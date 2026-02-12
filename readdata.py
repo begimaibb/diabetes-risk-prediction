@@ -2,9 +2,7 @@ import pandas as pd
 import numpy as np
 
 file_path = './data/LLCP2023.XPT' 
-df_full = pd.read_sas(file_path, format='xport')
-df = df_full.sample(frac=0.2, random_state=42)
-
+df = pd.read_sas(file_path, format='xport')
 
 df['Diabetes_binary'] = df['DIABETE4'].replace({2: 0, 3: 0, 4: 0})
 
