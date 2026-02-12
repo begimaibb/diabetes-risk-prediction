@@ -1,7 +1,7 @@
 # Predicting and Preventing Diabetes  
 ### A Machine Learning Analysis of BRFSS Data
 
-**Authors:** Begimai Bolotbekova
+**Author:** Begimai Bolotbekova
 **Course:** 322390 Big Data Analytics
 **Institution:** National Taipei University of Technology  
 **Date:** January 2024  
