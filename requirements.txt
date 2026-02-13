@@ -6,3 +6,5 @@ optuna
 streamlit
 matplotlib
 seaborn
+altair
+imblearn
