@@ -4,6 +4,15 @@ import numpy as np
 import pickle
 import xgboost as xgb
 
+
+st.set_page_config(page_title="Diabetes Risk Predictor", layout="wide")
+st.title("Predicting and Preventing Diabetes")
+st.markdown("### Machine Learning Risk Assessment based on 2023 BRFSS Data")
+
+st.info("Please enter your health information below to receive a risk assessment.")
+
+col1, col2 = st.columns(2)
+
 @st.cache_resource
 def load_model():
     with open('diabetes_model.pkl', 'rb') as f:
@@ -33,13 +42,6 @@ income_map = {
     10: "$150k to <$200k", 11: "$200,000 or more"
 }
 
-st.set_page_config(page_title="Diabetes Risk Predictor", layout="wide")
-st.title("Predicting and Preventing Diabetes")
-st.markdown("### Machine Learning Risk Assessment based on 2023 BRFSS Data")
-
-st.info("Please enter your health information below to receive a risk assessment.")
-
-col1, col2 = st.columns(2)
 
 with col1:
     st.subheader("Demographics & Lifestyle")
