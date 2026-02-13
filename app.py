@@ -11,7 +11,6 @@ def load_model():
 
 model = load_model()
 
-# Mappings
 age_map = {
     1: "18-24", 2: "25-29", 3: "30-34", 4: "35-39", 5: "40-44",
     6: "45-49", 7: "50-54", 8: "55-59", 9: "60-64", 10: "65-69",
@@ -93,10 +92,8 @@ if st.button('Predict My Risk'):
     
     features_df = pd.DataFrame([input_data], columns=feature_names)
     
-    # Prediction
     prob = model.predict_proba(features_df)[0][1]
     
-    # We use a 0.3 threshold for better medical screening recall
     threshold = 0.3
     
     st.markdown("---")
