@@ -10,7 +10,9 @@
 
 ## Project Overview
 
-This project applies machine learning techniques to predict diabetes risk using data from the **Behavioral Risk Factor Surveillance System (BRFSS)** provided by the CDC. The final model is deployed as a **Streamlit web application** for real-time risk assessment.
+This project applies machine learning techniques to predict diabetes risk using data from the **Behavioral Risk Factor Surveillance System (BRFSS)** provided by the CDC. The final model is deployed as a **Streamlit web application** for real-time risk assessment. 
+
+Check out the live app here: [Diabetes Risk Predictor](https://diabetes-risk-prediction-bfrss.streamlit.app/)
 
 ---
 
@@ -36,13 +38,3 @@ The dataset is **imbalanced**, with fewer diabetic cases than non-diabetic cases
   - Merged diabetes type 1 and 2 into a single positive class
   - Feature selection and transformation
 - **Optimization:** Hyperparameter tuning using **Optuna**
-
-
----
-
-## Web Application
-
-A **Streamlit-based web app** allows users to:
-- Input health and lifestyle information
-- Receive an immediate diabetes risk prediction
-- Increase awareness and encourage preventive action
