@@ -31,3 +31,6 @@ model.fit(X_train_res, y_train_res)
 
 y_pred = model.predict(X_test)
 print(classification_report(y_test, y_pred))
+
+with open('diabetes_model.pkl', 'wb') as f:
+    pickle.dump(model, f)
