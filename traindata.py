@@ -2,7 +2,7 @@ import pandas as pd
 import xgboost as xgb
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score
-from imblearn.combine import SMOTETomek # More advanced than basic SMOTE
+from imblearn.combine import SMOTETomek
 import pickle
 
 df = pd.read_csv('./data/brfss_health_ind_2023_cleaned.csv')
@@ -25,7 +25,6 @@ model = xgb.XGBClassifier(
     random_state=42,
     eval_metric='logloss'
 )
-
 
 model.fit(X_train_res, y_train_res)
 
