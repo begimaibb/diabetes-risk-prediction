@@ -38,3 +38,21 @@ The dataset is **imbalanced**, with fewer diabetic cases than non-diabetic cases
   - Merged diabetes type 1 and 2 into a single positive class
   - Feature selection and transformation
 - **Optimization:** Hyperparameter tuning using **Optuna**
+
+---
+
+## Model Performance
+
+Key metrics on the test set:
+
+| Metric    | Score |
+|-----------|-------|
+| Accuracy  | 0.80  |
+
+
+| Class | Precision | Recall | F1-Score | Support |
+|-------|----------|--------|----------|---------|
+| 0.0   | 0.91     | 0.84   | 0.88     | 106,447 |
+| 1.0   | 0.38     | 0.55   | 0.45     | 18,577  |
+
+---
